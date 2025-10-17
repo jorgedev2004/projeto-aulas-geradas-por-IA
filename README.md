@@ -33,6 +33,15 @@ IA (Simulada): Google Gemini API (A implementação da chamada real está docume
 Bibliotecas: jsPDF
 
 🚀 Como Executar o Projeto
+
+Existem duas formas:
+
+Primeira e mais rápida (web),basta acessar o link >>> https://jorgedev2004.github.io/projeto-aulas-geradas-por-IA/
+que ele vai te levar ao site 100% funcional e que ao clicar em "gerar plano de aula" ela gera o plano e popula o banco
+de dados no SupaBase link do banco de dados >>> https://supabase.com/dashboard/project/xrsvzquinlethhbshpyv
+
+
+Agora, a segunda forma (Localmente)
 Para executar este projeto localmente e conectá-lo ao seu próprio backend Supabase, siga os passos abaixo.
 
 Pré-requisitos
@@ -78,3 +87,4 @@ Localize as duas primeiras constantes no topo do arquivo e substitua os valores 
 const SUPABASE_URL = 'SUA_URL_DO_SUPABASE_AQUI';
 const SUPABASE_ANON_KEY = 'SUA_CHAVE_ANON_AQUI';
 // ...
+
