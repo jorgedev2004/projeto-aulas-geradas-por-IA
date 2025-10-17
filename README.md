@@ -31,3 +31,50 @@ Backend (BaaS): Supabase (Banco de Dados PostgreSQL com RLS)
 IA (Simulada): Google Gemini API (A implementação da chamada real está documentada no código)
 
 Bibliotecas: jsPDF
+
+🚀 Como Executar o Projeto
+Para executar este projeto localmente e conectá-lo ao seu próprio backend Supabase, siga os passos abaixo.
+
+Pré-requisitos
+Uma conta no Supabase.
+
+Um navegador web moderno (Chrome, Firefox, Edge).
+
+Git instalado na sua máquina.
+
+Passo 1: Configuração do Backend (Supabase)
+Crie um Novo Projeto: Acesse seu dashboard do Supabase e crie um novo projeto.
+
+Execute o Script SQL:
+
+No menu à esquerda do seu projeto, vá para SQL Editor.
+
+Clique em "+ New query".
+
+Copie todo o conteúdo do arquivo schema.sql deste repositório, cole no editor e clique em "RUN". Isso criará a tabela planos_gerados com a estrutura e as políticas de segurança corretas.
+
+Obtenha as Credenciais:
+
+No menu à esquerda, vá para Project Settings (ícone de engrenagem).
+
+Clique em API.
+
+Nesta página, você encontrará sua Project URL e sua Chave Pública anon. Mantenha esta página aberta
+
+Passo 2: Configuração do Frontend (Código-fonte)
+
+Clone o Repositório: Abra um terminal e clone este projeto para a sua máquina.
+Configure as Chaves:
+
+Abra o projeto no seu editor de código (ex: VS Code).
+
+Abra o arquivo main.js.
+
+Localize as duas primeiras constantes no topo do arquivo e substitua os valores pelas credenciais que você copiou do seu projeto Supabase:
+
+// =================================================================
+// 1. CONFIGURAÇÃO
+// =================================================================
+const SUPABASE_URL = 'SUA_URL_DO_SUPABASE_AQUI';
+const SUPABASE_ANON_KEY = 'SUA_CHAVE_ANON_AQUI';
+// ...
